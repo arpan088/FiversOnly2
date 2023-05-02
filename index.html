@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fivers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tabOrPhone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/976d7b3d4c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDcr8_6-Lrv4uZTrs9TBeJsVW_GUTsL-KQ",
+              authDomain: "thefivers-da97e.firebaseapp.com",
+              projectId: "thefivers-da97e",
+              storageBucket: "thefivers-da97e.appspot.com",
+              messagingSenderId: "736611710396",
+              appId: "1:736611710396:web:f95cd93d4bba5e1bb227b9",
+              measurementId: "G-RXDJ1C2DF7"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var recealpoint = 150;
+
+                if (revealtop < windowheight - recealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="fullBody">
+        <nav id="navbar">
+            <div class="containers">
+                <h2><a href="#">The Fivers</a></h2>
+                <div class="bars"></div>
+                <div class="listItems">
+                    <ul>
+                        <li><a href="#members">Members</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="hero">
+            <div class="first"></div>
+            <div class="last">
+                <div class="upperPart">
+                    <span class="subheadding">A group Project</span>
+                    <h1>Th<span>e Five</span>rs</h1>
+                </div>
+                <div class="lowerPart">
+                    <div class="leftH"></div>
+                    <div class="rightH">
+                        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, deserunt. Necessitatibus
+                            reiciendis, magnam veniam qui maxime commodi facere aspernatur nam voluptate reprehenderit
+                            porro exercitationem minus eaque, fuga non in officia.</h2>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="members">
+            <div id="arpan" class="divider">
+                <div class="leftContent">
+                    <img src="assests/Arpan.jpeg" alt="not laod" id="img">
+                </div>
+                <div class="rightContent">
+                    <div class="name">
+                        <h1 id="name1">Arpan Roy</h1>
+                        <h5 id="stream">B.Tech in ECE (Techno International New Town)</h5>
+                    </div>
+                    <div class="socialLinks">
+                        <ul>
+                            <li><a href="#"><img src="assests/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/github.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="name">
+                        <h1>Arpan Roy</h1>
+                    </div> -->
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa aspernatur perferendis
+                            maiores alias laudantium possimus nemo dicta magni vitae voluptatem at cumque dolor,
+                            perspiciatis minus reiciendis error maxime quos fugit! Neque inventore quasi commodi alias.
+                            Tempora quod, corporis quisquam odio distinctio omnis nesciunt quas laboriosam iste
+                            mollitia. <br> Tempora expedita possimus corporis. Assumenda porro ex, quasi beatae nihil
+                            optio
+                            repudiandae id dolores ullam tempora impedit maxime repellat quae nemo aliquid enim dolorum.
+                            Aliquam fugiat, quae accusantium veniam nemo ex natus provident sapiente architecto sed
+                            voluptatem minima, dolorum expedita quasi facere nisi tempora earum nulla repellat unde.
+                            Ipsam obcaecati iste amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="ayush" class="divider">
+
+                <div class="leftContent">
+                    <div class="name">
+                        <h1 id="name1">Ayush Paul</h1>
+                        <h5 id="stream">B.Tech in ECE(Techno International New Town)</h5>
+                    </div>
+                    <div class="socialLinks">
+                        <ul>
+                            <li><a href="#"><img src="assests/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/github.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa aspernatur perferendis
+                            maiores alias laudantium possimus nemo dicta magni vitae voluptatem at cumque dolor,
+                            perspiciatis minus reiciendis error maxime quos fugit! Neque inventore quasi commodi alias.
+                            Tempora quod, corporis quisquam odio distinctio omnis nesciunt quas laboriosam iste.
+                            mollitia. <br> Tempora expedita possimus corporis. Assumenda porro ex, quasi beatae nihil
+                            optio
+                            repudiandae id dolores ullam tempora impedit maxime repellat quae nemo aliquid enim dolorum.
+                            Aliquam fugiat, quae accusantium veniam nemo ex natus provident sapiente architecto sed
+                            voluptatem minima, dolorum expedita quasi facere nisi tempora earum nulla repellat unde.
+                            Ipsam obcaecati iste amet.</p>
+                    </div>
+                </div>
+                <div class="rightContent">
+                    <img src="assests/Ayush.jpeg" alt="not laod" id="img-lef">
+                </div>
+            </div>
+            <div id="sagnik" class="divider">
+                <div class="leftContent">
+                    <img src="assests/sagnik.jpeg" alt="not laod" id="img">
+                </div>
+                <div class="rightContent">
+                    <div class="name">
+                        <h1 id="name1">Sagnik Acharya</h1>
+                        <h5 id="stream">B.Tech in ECE(Techno International New Town)</h5>
+                    </div>
+                    <div class="socialLinks">
+                        <ul>
+                            <li><a href="#"><img src="assests/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/github.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa aspernatur perferendis
+                            maiores alias laudantium possimus nemo dicta magni vitae voluptatem at cumque dolor,
+                            perspiciatis minus reiciendis error maxime quos fugit! Neque inventore quasi commodi alias.
+                            Tempora quod, corporis quisquam odio distinctio omnis nesciunt quas laboriosam iste.
+                            mollitia. <br> Tempora expedita possimus corporis. Assumenda porro ex, quasi beatae nihil
+                            optio
+                            repudiandae id dolores ullam tempora impedit maxime repellat quae nemo aliquid enim dolorum.
+                            Aliquam fugiat, quae accusantium veniam nemo ex natus provident sapiente architecto sed
+                            voluptatem minima, dolorum expedita quasi facere nisi tempora earum nulla repellat unde.
+                            Ipsam obcaecati iste amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="uday" class="divider">
+                <div class="leftContent">
+                    <div class="name">
+                        <h1 id="name1">Uday Narayan Khanra</h1>
+                        <h5 id="stream">B.Tech in ECE(Techno International New Town)</h5>
+                    </div>
+                    <div class="socialLinks">
+                        <ul>
+                            <li><a href="#"><img src="assests/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/github.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa aspernatur perferendis
+                            maiores alias laudantium possimus nemo dicta magni vitae voluptatem at cumque dolor,
+                            perspiciatis minus reiciendis error maxime quos fugit! Neque inventore quasi commodi alias.
+                            Tempora quod, corporis quisquam odio distinctio omnis nesciunt quas laboriosam iste.
+                            mollitia. <br> Tempora expedita possimus corporis. Assumenda porro ex, quasi beatae nihil
+                            optio
+                            repudiandae id dolores ullam tempora impedit maxime repellat quae nemo aliquid enim dolorum.
+                            Aliquam fugiat, quae accusantium veniam nemo ex natus provident sapiente architecto sed
+                            voluptatem minima, dolorum expedita quasi facere nisi tempora earum nulla repellat unde.
+                            Ipsam obcaecati iste amet.</p>
+                    </div>
+                </div>
+                <div class="rightContent">
+                    <img src="assests/Uday.jpeg" alt="not laod" id="img-lef">
+                </div>
+            </div>
+            <div id="soumodip" class="divider">
+                <div class="leftContent">
+                    <img src="assests/Soumodip.png" alt="not laod" id="img">
+                </div>
+                <div class="rightContent">
+                    <div class="name">
+                        <h1 id="name1">Soumodip Bhattacharjee</h1>
+                        <h5 id="stream">B.Tech in ECE(Techno International New Town)</h5>
+                    </div>
+                    <div class="socialLinks">
+                        <ul>
+                            <li><a href="#"><img src="assests/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assests/github.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="about">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi culpa aspernatur perferendis
+                            maiores alias laudantium possimus nemo dicta magni vitae voluptatem at cumque dolor,
+                            perspiciatis minus reiciendis error maxime quos fugit! Neque inventore quasi commodi alias.
+                            Tempora quod, corporis quisquam odio distinctio omnis nesciunt quas laboriosam iste.
+                            mollitia. <br> Tempora expedita possimus corporis. Assumenda porro ex, quasi beatae nihil
+                            optio
+                            repudiandae id dolores ullam tempora impedit maxime repellat quae nemo aliquid enim dolorum.
+                            Aliquam fugiat, quae accusantium veniam nemo ex natus provident sapiente architecto sed
+                            voluptatem minima, dolorum expedita quasi facere nisi tempora earum nulla repellat unde.
+                            Ipsam obcaecati iste amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>PROJECTS</h1>
+            <div class="para">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum adipisci veniam labore commodi atque
+                    quisquam impedit delectus tenetur in voluptatem debitis eos tempora, enim saepe expedita molestiae.
+                    Nam,
+                    voluptates distinctio!</p>
+            </div>
+            <!-- <div class="headerDown">
+                <div id="header-left"><h1>Projects Done</h1></div>
+                <hr>
+                <div id="header-right"><h1>Project Ideas</h1></div>
+            </div> -->
+            <div class="containers">
+                <div class="left-container">
+                    <h2>Projects Done</h2>
+                    <div class="done" id="I1st">
+                        <img src="assests/projects.jpg" alt="">
+                        <h3>Topic name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorum. Minima velit laborum
+                            ut
+                            nulla qui. Accusamus non tempore officia officiis, ullam facere iusto obcaecati iste
+                            explicabo
+                            rerum laboriosam modi?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dolorem! Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Natus, accusamus?
+                            Natus, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet accusamus? Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet</p>
+                    </div>
+                    <div class="done" id="I2nd">
+                        <img src="assests/projects.jpg" alt="">
+                        <h3>Topic name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorum. Minima velit laborum
+                            ut
+                            nulla qui. Accusamus non tempore officia officiis, ullam facere iusto obcaecati iste
+                            explicabo
+                            rerum laboriosam modi?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dolorem! Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Natus, accusamus?
+                            Natus, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet accusamus? Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet</p>
+                    </div>
+                    <a href="projects.html" class="btnn">See More</a>
+                </div>
+                <!-- <hr> -->
+                <div class="right-container">
+                    <h2>Project Ideas</h2>
+                    <div class="ideas" id="I1st">
+                        <img src="assests/projects.jpg" alt="">
+                        <h3>Topic name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorum. Minima velit laborum
+                            ut
+                            nulla qui. Accusamus non tempore officia officiis, ullam facere iusto obcaecati iste
+                            explicabo
+                            rerum laboriosam modi?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dolorem! Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Natus, accusamus?
+                            Natus, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet </p>
+                    </div>
+                    <div class="ideas" id="I2nd">
+                        <img src="assests/projects.jpg" alt="">
+                        <h3>Topic name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorum. Minima velit laborum
+                            ut
+                            nulla qui. Accusamus non tempore officia officiis, ullam facere iusto obcaecati iste
+                            explicabo
+                            rerum laboriosam modi?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dolorem! Lorem ipsum dolor
+                            sit amet consectetur, adipisicing elit. Natus, accusamus?
+                            Natus, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                            necessitatibus.
+                            Lorem ipsum dolor sit, amet </p>
+                    </div>
+                    <div class="ideas" id="I3rd">
+                        <img src="assests/projects.jpg" alt="">
+                        <h3>Topic name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dolorum. Minima velit laborum
+                            ut nulla qui. Accusamus non tempore officia officiis, ullam facere iusto obcaecati iste
+                            explicabo rerum laboriosam modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Quae, dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, accusamus?
+                            Natus, accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                            necessitatibus. Lorem ipsum dolor sit, amet accusamus? Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Placeat, necessitatibus. Lorem ipsum dolor sit, amet</p>
+                    </div>
+                    <a href="projects.html" class="btnn">See More</a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1>About Our Team</h1>
+            <div class="containers">
+                <div class="leftContainer">
+                    <img src="assests/aboutimg.jpg" alt="">
+                </div>
+                <div class="rightContainer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quasi maxime ut eum provident
+                        nemo vitae, nulla natus voluptatem necessitatibus eligendi, a, non quos odit iusto esse
+                        recusandae nostrum. Temporibus deserunt, laudantium culpa nesciunt at ad quaerat beatae modi eum
+                        esse minus obcaecati libero totam illo similique iste. Minima quis laborum aperiam enim deserunt
+                        aut asperiores, aliquam facilis dolor sequi non unde cupiditate optio error corporis
+                        perspiciatis. Non est quod nesciunt molestiae tenetur, doloribus delectus molestias mollitia.
+                        Saepe ab enim vero? Earum aspernatur nesciunt voluptatem laudantium reiciendis harum,
+                        cupiditate, doloremque nobis vel, cum dolorum in pariatur animi hic dolor quis distinctio
+                        consectetur veniam deserunt fugiat ipsam. Magni culpa architecto nihil molestiae necessitatibus
+                        sapiente deserunt voluptas et exercitationem .</p>
+                    <br>
+                    <p> quibusdam modi optio, dignissimos vel excepturi, nulla at saepe assumenda, quae suscipit autem.
+                        Cum magni, reprehenderit obcaecati a quibusdam maiores et? Assumenda ea aliquid consequatur
+                        deserunt? Beatae maiores laborum quisquam et quas laboriosam unde ad impedit in dolorem a
+                        molestias doloribus exercitationem, tempora eos voluptates blanditiis officia id fugiat harum!
+                        Necessitatibus eveniet consectetur debitis vitae fugiat beatae est enim iure quaerat aliquid
+                        accusamus laboriosam explicabo, esse iste? Quo ea consequuntur neque sunt nemo provident dicta
+                        dolor quae cum at voluptate sint nam porro rerum quis, expedita alias earum minima totam
+                        perspiciatis repellat praesentium voluptas! Vero, perspiciatis illum. Illum inventore quis quas
+                        esse non perspiciatis dolor corrupti fugit dolorum cumque perferendis hic beatae, delectus porro
+                        nemo ullam repellat quam, sed dicta. Minus tenetur accusantium voluptates at culpa porro iste
+                        dolorum itaque aperiam sit delectus quidem fugit reiciendis excepturi hic corporis, quos facere.
+                        Perferendis voluptatum architecto quis harum suscipit. Voluptate aliquam debitis suscipit earum
+                        quaerat quam porro distinctio laudantium repellat architecto, numquam cum dolorem est ipsam.
+                        Facere, odio! Adipisci modi fuga, molestias voluptatem perferendis laboriosam, temporibus
+                        incidunt facere voluptate nulla explicabo, eaque dolorum! Soluta!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contactUs">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita animi debitis libero dicta laborum
+                officiis, rerum voluptate velit perferendis nemo incidunt esse, assumenda ratione, autem vitae facilis
+                impedit explicabo fugit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, culpa.</p>
+
+            <!-- <form action="#">
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="abc.123@gamil.com">
+
+
+                <label for="phone">phone number:</label>
+                <input type="number" placeholder="96352 48199">
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Full Name">
+                </div>
+
+                <div>
+                    <label for="name">Subject:</label>
+                    <input type="text" placeholder="Text Title">
+                </div>
+
+                <div>
+                    <label for="textmsg">Message:</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Text Here"></textarea>
+                </div>
+            </form> -->
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Phone Number:</label>
+                    <input type="number" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder=" ">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Subject:</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Project Type:</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Software</option>
+                        <option>Hardware</option>
+                    </select>
+                </div>
+                <!-- <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div> -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <div class="Side">
+                    <div class="col-12" style="padding-bottom: 10px;">
+                        <button type="submit" class="btn btn-primary">Contact Us</button>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Hire Us</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <a href="#" class="back-to-top" style="display: inline;"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>

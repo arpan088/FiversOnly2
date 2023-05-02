@@ -1,0 +1,241 @@
+/*********************************************************************** laptop or tab screen *************************************************************/
+
+@media only screen and (max-width:1500px) and (min-width:1210px) {
+    #fullBody {
+        padding: 0px 50px 0px 50px;
+    }
+
+    /* #projects .containers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 30px;
+        padding: 30px 10px 0px 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #about .containers {
+        flex-wrap: wrap;
+    }
+
+    #about .containers .leftContainer {
+        padding: 0px 0px 20px 0px;
+    } */
+}
+
+
+
+
+@media only screen and (max-width:1209px)
+
+/*and (min-width:510px)*/
+    {
+    #fullBody {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #navbar .containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0px 15px 0px;
+        flex-wrap: wrap;
+    }
+    #navbar .containers .listItems ul li{
+        padding: 10px 10px 10px 10px;
+    }
+    /* #navbar .containers .listItems ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #aaaaaa;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    } */
+    #hero .first {
+        padding-left: 0%;
+    }
+
+    #hero .last .upperPart .subheadding {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #111111;
+        font-size: 12px;
+        display: inline-block;
+        letter-spacing: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        z-index: 0;
+        margin-left: 0px;
+    }
+
+    /********************** Members **************************/
+    #members {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .divider {
+        display: flex;
+        padding: 20px 0px 10px 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .leftContent {
+        padding: 0px;
+    }
+
+    #stream {
+        font-size: 25px;
+        text-align: center;
+        padding: 10px 0px 10PX 0PX;
+    }
+    #img-lef:first-child {
+        order: 1;
+    }
+
+    .about p{
+        text-align: center;
+    }
+    .rightContent .socialLinks ul {
+        /* list-style: none;
+        display: flex;
+        padding-left: 0;
+        padding: 20px 0px 20px 0px; */
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .leftContent .socialLinks ul {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+    .leftContent img {
+        width: 225px;
+        height: 270px;
+        /* padding-right: 50px; */
+    }
+
+    .rightContent img {
+        width: 225px;
+        height: 270px;
+    }
+
+    #arpan .leftContent img {
+        width: 225px;
+        height: 344px;
+    }
+
+    .name h1 {
+        /* padding: 10px 0px 10px 0px; */
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /**************projects******************/
+    #projects .containers {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding-top: 30px;
+        padding: 30px 10px 0px 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .left-container {
+        border-right: 0px solid black;
+    }
+
+    .left-container img {
+        width: 225px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .right-container img {
+        width: 225px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    #projects h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    /****************** Abouit ************************/
+    #about h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #about .containers {
+        flex-wrap: wrap;
+    }
+
+    #about .containers .leftContainer {
+        padding: 0px 0px 20px 0px;
+    }
+
+    #about .containers .leftContainer img {
+        width: 328px;
+    }
+
+    #projects .para {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+    }
+
+    /**********************Contact us *********************/
+    #contactUs h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #contactUs p {
+        padding: 10px 10px 10px 10px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+    .back-to-top {
+        position: fixed;
+        display: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 200px;
+        right: 10px;
+        bottom:43px;
+        background: #70c4eb;
+        color: #fff;
+        transition: display 0.9s ease-in;
+        z-index: 99999;
+      }
+      
+      .back-to-top i {
+        font-size: 24px;
+        position: absolute;
+        top: 7px;
+        left: 0px;
+        right: 0;
+      }
+      
+      .back-to-top:hover {
+        color: #fff;
+        background: #547788;
+        transition: background 0.9s ease-in;
+      }
+}

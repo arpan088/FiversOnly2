@@ -1,0 +1,527 @@
+* {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+#fullBody {
+    padding: 0px 200px 0px 200px;
+}
+
+#navbar .containers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px 15px 0px;
+    flex-wrap: wrap;
+}
+
+#navbar .containers h2 {
+    font-size: 50px;
+
+}
+
+#navbar .containers h2 a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Tilt Prism', cursive;
+    color: #111111;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+#navbar .containers .listItems {
+    align-items: center;
+}
+
+#navbar .containers .listItems ul {
+    list-style: none;
+    display: flex;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#navbar .containers .listItems ul li {
+    padding: 0px 10px 0px 10px;
+}
+
+/* #navbar .containers .listItems ul li:hover{
+    color: black
+} */
+#navbar .containers .listItems ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* color: rgba(0, 0, 0, 0.7); */
+    color: #aaaaaa;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+#navbar .containers .listItems ul li a:hover {
+    color: black
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 40px 60px 40px;
+    align-items: flex-end;
+    /* text-align: right; */
+}
+
+#hero .first {
+    padding-left: 50%;
+}
+
+#hero .last .upperPart .subheadding {
+    width: 26%;
+}
+
+#hero .last .upperPart .subheadding::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    border-bottom: 2px solid black;
+}
+
+#hero .last .upperPart .subheadding {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #111111;
+    font-size: 12px;
+    display: inline-block;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 0;
+    margin-left: -70px;
+}
+
+#hero .last .upperPart h1 {
+    /* padding-left: 50%; */
+    font-weight: 800;
+    color: #444444;
+    font-size: 10vw;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+#hero .last .upperPart h1 span {
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#hero .last .lowerPart {
+    display: flex;
+}
+
+/* #hero .last .lowerPart .leftH{
+    padding: 50%;
+} */
+#hero .last .lowerPart .rightH h2 {
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    font-weight: 200;
+    color: #919191;
+    text-align: justify;
+}
+
+#members {
+    padding: 0px 50px 0px 50px;
+}
+
+.divider {
+    display: flex;
+    padding: 50px 0px 10px 0px;
+}
+
+.leftContent img {
+    width: 465px;
+    height: 580px;
+    /* padding-right: 50px; */
+}
+
+#arpan .leftContent img {
+    width: 420px;
+    height: 600px;
+}
+
+/* #ayush .leftContent{
+    padding: 0px 100px 0px 0px;
+}
+#uday .leftContent{
+    padding: 0px 100px 0px 0px;
+}
+#arpan .rightContent{
+    padding: 0px 0px 0px 100px;
+}
+#sagnik .rightContent{
+    padding: 0px 0px 0px 100px;
+}
+#soumodip .rightContent{
+    padding: 0px 0px 0px 100px;
+} */
+.leftContent {
+    padding-right: 60px;
+}
+
+/* #img {
+    padding-right: 60px;
+} */
+
+.rightContent img {
+    width: 465px;
+    height: 595px;
+    /* padding-left: 50px; */
+}
+
+/* #img-lef {
+    padding-left: 60px;
+} */
+
+.leftContent .socialLinks ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+
+.leftContent .socialLinks ul li {
+    padding-right: 15px;
+}
+
+.leftContent .socialLinks ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+.rightContent .socialLinks ul {
+    /* list-style: none;
+    display: flex;
+    padding-left: 0;
+    padding: 20px 0px 20px 0px; */
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+
+.rightContent .socialLinks ul li {
+    padding-right: 15px;
+}
+
+.rightContent .socialLinks ul li img {
+    width: 25px;
+    height: 25px;
+    fill: #f4bf2c;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+/* .name{
+    padding: 10px 0px 10px 0px;
+} */
+.name h1 {
+    /* padding: 10px 0px 10px 0px; */
+    font-size: 3vw;
+    /* width: fit-content; */
+}
+
+#name1:hover {
+    /* padding: 10px 0px 10px 0px; */
+    cursor: pointer;
+    color: #f4bf2c;
+}
+
+/* hover effect is not working in svg img*/
+.rightContent .socialLinks ul li a img:hover {
+
+    transform: scale(1.1);
+}
+
+.leftContent .socialLinks ul li a img:hover {
+
+    transform: scale(1.1);
+}
+
+/* .rightContent .socialLinks ul li img:hover{
+    color: #f4bf2c;
+} */
+#stream {
+    font-size: 25px;
+    /* text-align: center; */
+    padding: 10px 0px 10PX 0PX;
+}
+
+/*********************** projetcs css ***********************/
+
+#projects {
+    padding: 60px 0px 0px 0px;
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+#projects .para {
+    font-size: 1vw;
+    text-align: center;
+    padding: 10px 100px 10px 100px;
+}
+
+#projects .containers {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-top: 30px;
+    padding: 30px 10px 0px 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+/* hr {
+    border: 1px solid black;
+    margin: 20px 0;
+    height: 100px;
+    left: 50%;
+} */
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: 2px solid black;
+    /* width: 50%; */
+}
+
+/* .left-container {
+    display: flex;
+    border-right: 2px solid black;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.left-container h2 {
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0px 100px 0px 100px;
+}
+
+.left-container img {
+    width: 500px;
+    padding: 10px 0px 10px 0px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-container h2 {
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0px 100px 0px 100px;
+}
+
+.right-container img {
+    width: 500px;
+    padding: 10px 0px 10px 0px;
+}
+
+.ideas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.done {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .ideas, .done p{
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+} */
+.right-container .ideas p {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.left-container .done p {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+#I1st,
+#I2nd,
+#I3rd {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.btnn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-family: "montserrat";
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: .08s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btnn:hover {
+    color: white;
+    background-color: #111111;
+}
+
+/* .btnn {
+    border: 1px solid black;
+    background: none;
+    padding: 10px 20px;
+    font-family: "montserrat";
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: .08s;
+    position: relative;
+    overflow: hidden;
+} */
+
+/* .btnn:hover {
+    color: white;
+    background-color: #111111;
+} */
+
+
+/************** About Us ******************/
+
+#about {
+    padding: 70px 0px 70px 0px;
+}
+
+#about h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+#about .containers {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#about .containers .leftContainer {
+    padding: 0px 30px 0px 0px;
+
+}
+
+#about .containers .leftContainer img {
+    width: 550px;
+
+}
+
+#about .containers .rightContainer {
+    padding: 0px 0px 0px 20px;
+
+}
+
+#about .containers .rightContainer p {
+    font-size: 17px;
+
+}
+
+/**************** Contact Us *****************/
+
+#contactUs {
+    padding: 0px 10px 0px 10px;
+}
+
+#contactUs h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+#contactUs p {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 10px 100px 10px 100px;
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    background: #70c4eb;
+    color: #fff;
+    transition: display 1s ease-in-out;
+    z-index: 99999;
+    transition-delay: 1s;
+  }
+
+  .back-to-top i {
+    font-size: 24px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+  }
+  
+  .back-to-top:hover {
+    color: #fff;
+    background: #547788;
+    transition: background 1s ease-in-out;
+  }
